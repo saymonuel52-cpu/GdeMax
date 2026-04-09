@@ -1,6 +1,6 @@
 import { Building, User, HardHat, Briefcase } from 'lucide-react'
 import { useAuthStore } from '@stores/useAuthStore'
-import { UserRole } from '@types'
+import { UserRole } from '../types'
 import { useNavigate } from 'react-router-dom'
 
 const ROLES: { id: UserRole; name: string; description: string; icon: any }[] = [

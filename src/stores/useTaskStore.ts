@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { Task } from '@types'
+import { Task, TaskChecklistItem } from '../types'
 import { mockTasks } from '@services/mockData'
 
 interface TaskState {
@@ -77,7 +77,7 @@ export const useTaskStore = create<TaskState>()(
             task.id === taskId
               ? {
                   ...task,
-                  checklist: (task.checklist || []).map((item) =>
+                  checklist: (task.checklist || []).map((item: TaskChecklistItem) =>
                     item.id === itemId
                       ? { ...item, completed: !item.completed }
                       : item,

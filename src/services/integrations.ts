@@ -1,5 +1,5 @@
 import toast from 'react-hot-toast'
-import { ConstructionObject, Act, EstimateItem } from '@types'
+import { ConstructionObject, Act, EstimateItem } from '../types'
 
 /**
  * Имитация экспорта в 1С (CSV/XML)

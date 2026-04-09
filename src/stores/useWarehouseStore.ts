@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { WarehouseItem, Transaction } from '@types'
+import { WarehouseItem, Transaction } from '../types'
 import { mockWarehouse } from '@services/mockData'
 
 interface WarehouseState {

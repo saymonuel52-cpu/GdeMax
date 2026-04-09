@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { Theme } from '@types'
+import { Theme } from '../types'
 
 const THEMES: Theme[] = [
   {

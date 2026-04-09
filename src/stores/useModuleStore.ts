@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { ModuleDefinition } from '@types'
+import { ModuleDefinition } from '../types'
 import { mockModules } from '@services/mockData'
 
 interface ModuleState {

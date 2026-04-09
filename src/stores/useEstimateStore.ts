@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { EstimateItem, PriceItem } from '@types'
+import { EstimateItem, PriceItem } from '../types'
 import { mockPriceItems } from '@services/mockData'
 
 interface EstimateState {

@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { ConstructionObject } from '@types'
+import { ConstructionObject } from '../types'
 import { mockObjects } from '@services/mockData'
 
 interface ObjectState {

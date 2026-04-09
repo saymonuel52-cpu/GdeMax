@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { Act } from '@types'
+import { Act } from '../types'
 
 interface ActState {
   acts: Act[]

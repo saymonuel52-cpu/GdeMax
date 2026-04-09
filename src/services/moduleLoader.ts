@@ -1,5 +1,6 @@
-import { ModuleDefinition } from '@types'
+import { ModuleDefinition } from '../types'
 import toast from 'react-hot-toast'
+import React from 'react'
 
 /**
  * Загружает пользовательский модуль из файла .gmod (JSON)
@@ -55,10 +56,10 @@ export function evaluateModuleComponent(code: string): React.ComponentType | nul
   try {
     // Ограничиваем доступные глобальные объекты
     const sandbox = {
-      React: require('react'),
-      useState: require('react').useState,
-      useEffect: require('react').useEffect,
-      useRef: require('react').useRef,
+      React,
+      useState: React.useState,
+      useEffect: React.useEffect,
+      useRef: React.useRef,
       console,
       Date,
       Math,
@@ -95,7 +96,7 @@ export function generateExampleModule(): string {
     category: 'Пример',
     icon: '⭐',
     priceItems: [
-      { id: 'ex-1', name: 'Пример работы', price: 1000, unit: 'шт', type: 'work' },
+      { id: 'ex-1', name: 'Пример работы', price: 1000, unit: 'шт', type: 'work', category: 'Пример' },
     ],
     tasks: [
       { title: 'Пример задачи', duration: 1, dependsOn: [] },

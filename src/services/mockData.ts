@@ -1,4 +1,4 @@
-import { ConstructionObject, ModuleDefinition, PriceItem, Task, WarehouseItem } from '@types'
+import { ConstructionObject, ModuleDefinition, PriceItem, Task, WarehouseItem } from '../types'
 
 export const mockObjects: ConstructionObject[] = [
   {
@@ -57,8 +57,8 @@ export const mockModules: ModuleDefinition[] = [
     category: 'Черновые работы',
     icon: '🔨',
     priceItems: [
-      { id: 'dem-1', name: 'Демонтаж перегородки', price: 800, unit: 'м²', type: 'work' },
-      { id: 'dem-2', name: 'Вывоз мусора', price: 300, unit: 'м³', type: 'work' },
+      { id: 'dem-1', name: 'Демонтаж перегородки', price: 800, unit: 'м²', type: 'work', category: 'Демонтаж' },
+      { id: 'dem-2', name: 'Вывоз мусора', price: 300, unit: 'м³', type: 'work', category: 'Демонтаж' },
     ],
     tasks: [
       { title: 'Демонтаж стен', duration: 2, dependsOn: [] },
@@ -76,8 +76,8 @@ export const mockModules: ModuleDefinition[] = [
     category: 'Черновые работы',
     icon: '⚡',
     priceItems: [
-      { id: 'elec-1', name: 'Прокладка кабеля', price: 150, unit: 'м.п.', type: 'work' },
-      { id: 'elec-2', name: 'Кабель ВВГнг 3x2.5', price: 85, unit: 'м.п.', type: 'material' },
+      { id: 'elec-1', name: 'Прокладка кабеля', price: 150, unit: 'м.п.', type: 'work', category: 'Электрика' },
+      { id: 'elec-2', name: 'Кабель ВВГнг 3x2.5', price: 85, unit: 'м.п.', type: 'material', category: 'Электрика' },
     ],
     tasks: [
       { title: 'Разметка трасс', duration: 1, dependsOn: [] },
@@ -96,8 +96,8 @@ export const mockModules: ModuleDefinition[] = [
     category: 'Инженерные системы',
     icon: '🌡️',
     priceItems: [
-      { id: 'hf-1', name: 'Укладка кабеля', price: 500, unit: 'м²', type: 'work' },
-      { id: 'hf-2', name: 'Терморегулятор', price: 1500, unit: 'шт', type: 'material' },
+      { id: 'hf-1', name: 'Укладка кабеля', price: 500, unit: 'м²', type: 'work', category: 'Тёплый пол' },
+      { id: 'hf-2', name: 'Терморегулятор', price: 1500, unit: 'шт', type: 'material', category: 'Тёплый пол' },
     ],
     tasks: [
       { title: 'Укладка кабеля', duration: 1, dependsOn: [] },
